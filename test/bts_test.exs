@@ -5,6 +5,7 @@ defmodule BTSTest do
   test "Testing New function in BTS" do
     assert BTS.new() == {nil, nil, nil}
     assert BTS.new(1) == {1, nil, nil}
+    assert BTS.new([5, 2, 9]) == {5, {2, nil, nil}, {9, nil, nil}}
   end
 
   test "Testing insert function in BTS" do
