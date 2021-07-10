@@ -28,5 +28,6 @@ jobs:
     - name: Install dependencies
       run: mix deps.get
     - name: Run tests
-      run: cd bts
-          mix test
+      run: |-
+        cd bts
+        mix test
