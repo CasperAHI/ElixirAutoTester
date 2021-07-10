@@ -7,7 +7,7 @@ defmodule BTS do
     BTS.insert(a, {nil, nil, nil})
   end
 
-
+  
   def insert( [], tree )  do
     tree
   end
@@ -33,15 +33,5 @@ defmodule BTS do
         end
       end
     end
-  end
-
-
-
-  def muu(a, b, c) do
-      a + b + c
-  end
-
-  def hello do
-    :world1
   end
 end
