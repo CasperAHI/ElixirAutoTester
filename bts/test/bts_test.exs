@@ -3,6 +3,6 @@ defmodule BTSTest do
   doctest BTS
 
   test "greets the world" do
-    assert BTS.hello() == :world
+    assert BTS.hello() == :world1
   end
 end
