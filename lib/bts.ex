@@ -1,5 +1,21 @@
 defmodule BTS do
 
+  def toString({value, left, right}) do
+    if left == nil do
+      if right == nil do
+        "{ 'Value': " <> Integer.to_string(value) <> ", 'Left :' nil, 'Right:' nil }"
+      else
+        "{ 'Value': " <> Integer.to_string(value) <> ", 'Left :' nil, 'Right:' " <> toString(right) <> " }"
+      end
+    else
+      if right == nil do
+        "{ 'Value': " <> Integer.to_string(value) <> ", 'Left :' " <> toString(left) <> ", 'Right:' nil }"
+      else
+        "{ 'Value': " <> Integer.to_string(value) <> ", 'Left :' " <> toString(left) <> ", 'Right:' " <> toString(right) <> " }"
+      end
+    end
+  end
+
   def new() do
     {nil, nil, nil}
   end
